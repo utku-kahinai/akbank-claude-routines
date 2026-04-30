@@ -1,0 +1,14 @@
+{
+  "_note": "This file shows the schema. Routine A1 overwrites findings-today.json with real data.",
+  "date": "30 April 2026",
+  "timestamp": "2026-04-30T06:03:00Z",
+  "exec_summary": ["finding 1", "finding 2", "finding 3"],
+  "section_1_regulatory_macro": ["paragraph 1", "paragraph 2"],
+  "section_2_competitors": ["paragraph 1", "paragraph 2"],
+  "section_3_fintech_mena": ["paragraph 1", "paragraph 2"],
+  "implications": ["implication 1", "implication 2"],
+  "quick_summary": ["Q1", "Q2", "Q3", "Q4", "Q5"],
+  "sources": [
+    {"n": 1, "pub": "Reuters", "title": "title here", "url": "https://...", "accessed": "06:02 UTC"}
+  ]
+}
