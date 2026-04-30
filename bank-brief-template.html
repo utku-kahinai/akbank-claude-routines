@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Türk Bankacılık Brifing — %%DATE%%</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:#F5F5F5;color:#1A1A1A;padding:32px}
+.page{max-width:720px;margin:0 auto}
+.header{background:#fff;border-top:4px solid #E0362A;border-radius:8px;padding:24px 28px;margin-bottom:16px}
+.header-label{font-size:10px;font-weight:700;color:#6B7280;letter-spacing:2px;text-transform:uppercase}
+.header-title{font-size:20px;font-weight:700;margin:4px 0 2px}
+.header-date{font-size:13px;color:#6B7280}
+.card{background:#fff;border-radius:8px;padding:20px 24px;margin-bottom:12px;border:1px solid #E8E8E8}
+.card-title{font-size:10px;font-weight:700;color:#6B7280;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.card-title span{font-size:14px}
+.item{padding:8px 0;border-bottom:1px solid #F5F5F5;font-size:13px;line-height:1.6}
+.item:last-child{border-bottom:none;padding-bottom:0}
+.item strong{display:block;color:#1A1A1A;margin-bottom:3px}
+.item a{color:#E0362A;font-size:11px;text-decoration:none;font-weight:600}
+.highlight{background:#FFF5F5;border:2px solid #E0362A;border-radius:8px;padding:20px 24px;margin-bottom:12px}
+.highlight .card-title{color:#E0362A}
+.empty{color:#6B7280;font-style:italic;font-size:13px}
+.footer{font-size:11px;color:#6B7280;text-align:center;margin-top:20px}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="header">
+  <div class="header-label">Akbank Strategy Intelligence</div>
+  <div class="header-title">Türk Bankacılık Günlük Brifing</div>
+  <div class="header-date">%%DATE%%</div>
+</div>
+<div class="highlight">
+  <div class="card-title"><span>📌</span> GÜNÜN EN ÖNEMLİSİ</div>
+  %%TOP%%
+</div>
+<div class="card">
+  <div class="card-title"><span>🏛</span> REGÜLASYON & MERKEZ BANKASI</div>
+  %%REGUL%%
+</div>
+<div class="card">
+  <div class="card-title"><span>🏦</span> KAMU BANKALARI — Ziraat · Halkbank · Vakıfbank</div>
+  %%PUBLIC%%
+</div>
+<div class="card">
+  <div class="card-title"><span>🔵</span> TIER-1 — Akbank · Garanti BBVA · İş Bankası · Yapı Kredi</div>
+  %%TIER1%%
+</div>
+<div class="card">
+  <div class="card-title"><span>🟡</span> TIER-2 — QNB Finansbank · Denizbank · TEB · ING · Şekerbank</div>
+  %%TIER2%%
+</div>
+<div class="footer">%%TIMESTAMP%% · Akbank Strateji</div>
+</div>
+</body>
+</html>
