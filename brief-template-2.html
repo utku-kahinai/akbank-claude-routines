@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Akbank Daily Intelligence Brief — {{DATE}}</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:#1A1A1A;font-size:13px;line-height:1.7}
+.page{max-width:794px;margin:0 auto;padding:48px}
+.header{border-bottom:3px solid #E0362A;padding-bottom:20px;margin-bottom:28px}
+.label{font-size:10px;font-weight:700;color:#6B7280;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px}
+.title{font-size:24px;font-weight:700;color:#1A1A1A;margin-bottom:4px}
+.date{font-size:13px;color:#6B7280}
+.exec{background:#FFF5F5;border-left:4px solid #E0362A;border-radius:8px;padding:20px 24px;margin-bottom:24px}
+.exec .section-title{font-size:10px;font-weight:700;color:#E0362A;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px}
+.exec ul{list-style:none}
+.exec li{padding:4px 0 4px 20px;position:relative;font-weight:500}
+.exec li::before{content:'→';position:absolute;left:0;color:#E0362A;font-weight:700}
+.card{background:#F5F5F5;border:1px solid #E8E8E8;border-radius:8px;padding:20px 24px;margin-bottom:16px}
+.card .section-title,.qs .section-title,.footer .section-title{font-size:10px;font-weight:700;color:#6B7280;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid #E8E8E8}
+.card p{margin-bottom:10px;color:#1A1A1A}
+.card p:last-child{margin-bottom:0}
+.no-news{color:#6B7280;font-style:italic}
+sup{font-size:9px;color:#6B7280}
+.implications{border:2px solid #E0362A;border-radius:8px;padding:20px 24px;margin-bottom:24px}
+.implications .section-title{font-size:10px;font-weight:700;color:#E0362A;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px}
+.implications p{margin-bottom:10px;font-weight:500}
+.qs{margin-bottom:28px}
+.qs ol{padding-left:20px}
+.qs li{padding:4px 0}
+.footer{border-top:1px solid #E8E8E8;padding-top:16px}
+.footer ol{padding-left:20px;margin-top:8px}
+.footer li{font-size:11px;color:#6B7280;padding:2px 0}
+.footer a{color:#6B7280}
+.meta{font-size:10px;color:#6B7280;margin-top:12px}
+@media print{.page{padding:15mm}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="header">
+  <div class="label">Akbank Strategy Intelligence</div>
+  <div class="title">Akbank Daily Intelligence Brief</div>
+  <div class="date">{{DATE}}</div>
+</div>
+
+<div class="exec">
+  <div class="section-title">Executive Summary</div>
+  <ul>
+    <li>{{EXEC_1}}</li>
+    <li>{{EXEC_2}}</li>
+    <li>{{EXEC_3}}</li>
+  </ul>
+</div>
+
+<div class="card">
+  <div class="section-title">Section 1 — Regulatory &amp; Macro</div>
+  {{SECTION_1}}
+</div>
+
+<div class="card">
+  <div class="section-title">Section 2 — Sector &amp; Competitor Moves</div>
+  {{SECTION_2}}
+</div>
+
+<div class="card">
+  <div class="section-title">Section 3 — Fintech &amp; MENA Funding</div>
+  {{SECTION_3}}
+</div>
+
+<div class="implications">
+  <div class="section-title">Section 4 — What This Means for Akbank</div>
+  {{IMPLICATIONS}}
+</div>
+
+<div class="qs">
+  <div class="section-title">Quick Summary</div>
+  <ol>
+    <li>{{Q1}}</li>
+    <li>{{Q2}}</li>
+    <li>{{Q3}}</li>
+    <li>{{Q4}}</li>
+    <li>{{Q5}}</li>
+  </ol>
+</div>
+
+<div class="footer">
+  <div class="section-title">Sources</div>
+  <ol>{{SOURCES}}</ol>
+  <p class="meta">Generated {{TIMESTAMP}} · Akbank Strategy Intelligence · Automated Brief</p>
+</div>
+
+</div>
+</body>
+</html>
